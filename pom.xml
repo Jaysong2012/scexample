@@ -12,6 +12,8 @@
         <module>service-consumer</module>
         <module>service-zuul</module>
         <module>service-cosumer-ribbon</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
 	<packaging>pom</packaging>
 

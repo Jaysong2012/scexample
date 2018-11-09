@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      name: springcloud-config             #对应{application}部分
+      profile: pro                         #对应{profile}部分
+      uri: http://localhost:8888/          #配置中心的具体地址
+      label: master                        #对应git的分支。如果配置中心使用的是本地存储，则该参数无用
+      discovery:
+        service-id: config-client8889      #指定配置中心的service-id，便于扩展为高可用配置集群。
+      enabled: true                        #开启Config服务发现支持
+
+eureka:
+  client:
+    service-url:
+      #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔。
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
