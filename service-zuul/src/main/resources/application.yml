@@ -13,9 +13,15 @@ spring:
 
 zuul:
   routes:
+    #/api-a/ 开头匹配到service-producer
     api-a:
       path: /api-a/**
       serviceId: service-producer
+    #/api-b/ 开头匹配到service-producer
     api-b:
       path: /api-b/**
       serviceId: service-producer
+    #匹配/github/直接重定向到https://github.com/
+    github:
+      path: /github/**
+      url: https://github.com/
