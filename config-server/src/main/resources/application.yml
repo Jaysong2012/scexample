@@ -13,6 +13,21 @@ spring:
           username:                                             # git仓库的账号（私有库必填）
           password:                                             # git仓库的密码（私有库必填）
       label: master                                        #配置仓库的分支
+  rabbitmq:
+    host: 192.168.199.133
+    port: 5672
+    username: test
+    password: test123
+
+#关闭安全认证
+management:
+  security:
+    enabled: false
+  #refresh接入点显式暴露出来
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh
 
 eureka:
   client:

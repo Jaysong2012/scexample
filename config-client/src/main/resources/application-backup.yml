@@ -1,7 +1,6 @@
 server:
-  port: 8889
+  port: 8890
 
 spring:
   application:
     name: config-client
-
