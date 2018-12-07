@@ -11,7 +11,7 @@ scexample/
 ├── service-producer                 #服务提供方子工程:将自身服务注册到Eureka中心，从而使服务消费方能够找到
 ├── service-zuul                     #路由网关子工程：提供路由服务
 ├── springcloud-config-repo          # GitHub 远程配置仓库
-└── scrapy.cfg
+└── pom.xml
 ```
 
 ## 精彩博客
